@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 
 <html lang="pt">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Document</title>
 
-        <script type="module" src="index.js"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
 
-    <body>
-        <h1>Javascript Routing</h1>
+    <script type="module" src="index.js"></script>
+</head>
 
-        <!--using custom attribute router-link-->
-        <nav>
-            <button router-link="/">Home</button>
-            <button router-link="/about">About</button>
-            <button router-link="/contact">Contact</button>
-            <button router-link="/unknown">Error</button>
-        </nav>
+<body>
+    <h1>Javascript Routing</h1>
 
-        <div id="app">
+    <!--using custom attribute router-link-->
+    <nav>
+        <button router-link="/">Home</button>
+        <button router-link="/about">About</button>
+        <button router-link="/contact">Contact</button>
+        <button router-link="/unknown">Error</button>
+    </nav>
+
+    <main id="app">
+
+        <div id="home">
+            <img src="./assets/images/chaves.jpeg" alt="quico, chaves e senhor madruga" />
+            <p>O melhor programa de tv do mundo é o chaves</p>
         </div>
 
+        <div id="about" style="display: none;">
+            <img src="./assets/images/michael-olodum.jpeg" alt="Michael Jackson com o Olodum" />
+            <p lang="en">All I wanna say is that they don't really care about us</p>
+        </div>
 
-    </body>
+        <div id="contact" style="display: none;">
+            <img src="./assets/images/yellow-pages.jpg" alt="Páginas amarelas" />
+            <p>Se você sabe o que é essa imagem, você está velho</p>
+        </div>
+
+    </main>
+
+
+</body>
 
 </html>
